@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.div{
+    width: 100vw;
+    height: 100vh;
+    padding: 80px;
+}
+.parent{
+    height: 100vh;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+
+}
+.child{
+    width: 90vw;
+    height: 90vh;
+    margin: 35px auto;
+    background-color: aqua;
+    scroll-snap-align: center;
+}
+.blue{
+    background-color: green;
+}
+
+@media (prefers-color-scheme:dark){
+    .child{
+        background-color: red;
+    }
+}
+@media (prefers-color-scheme: light){
+    .child{
+        background-color: blue;
+    }
+}
